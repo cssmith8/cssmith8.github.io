@@ -1,4 +1,4 @@
-body {
+.page-wrapper {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: #333;
@@ -8,7 +8,7 @@ body {
     background-color: #f4f4f4;
 }
 
-header {
+.header {
     text-align: center;
     background: #2c3e50;
     color: white;
@@ -16,12 +16,31 @@ header {
     border-radius: 8px 8px 8px 8px;
 }
 
-header h1 {
+.header-title {
     margin: 0;
     font-size: 2.5rem;
 }
 
-section {
+.header-subtitle {
+    margin: 8px 0;
+    font-size: 1rem;
+}
+
+.navigation {
+    margin-top: 1rem;
+}
+
+.nav-link {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+.content-section {
     background: white;
     padding: 20px;
     margin-bottom: 10px;
@@ -29,18 +48,18 @@ section {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-h2 {
+.section-title {
     color: #2c3e50;
     border-bottom: 2px solid #3498db;
     padding-bottom: 5px;
 }
 
-h3 {
+.entry-title {
     margin-bottom: 5px;
     color: #2980b9;
 }
 
-ul {
+.list {
     padding-left: 20px;
 }
 
@@ -59,6 +78,7 @@ ul {
     gap: 8px;
     text-align: center;
     max-width: 80px;
+    min-width: 0;
 }
 
 .skill-logo {
@@ -72,7 +92,6 @@ ul {
     font-size: 0.85rem;
     font-weight: 500;
     color: #2c3e50;
-    word-break: break-word;
 }
 
 .project-buttons {
@@ -199,38 +218,49 @@ nav a:hover {
 
 /* Mobile Responsive Design */
 @media (max-width: 768px) {
-    body {
+    .page-wrapper {
         padding: 12px;
     }
 
-    header h1 {
+    .header-title {
         font-size: 1.8rem;
     }
 
-    header p {
+    .header-subtitle {
         font-size: 0.9rem;
         margin: 8px 0;
     }
 
-    section {
+    .content-section {
         padding: 15px;
         margin-bottom: 8px;
     }
 
-    h2 {
+    .section-title {
         font-size: 1.3rem;
     }
 
-    h3 {
+    .entry-title {
         font-size: 1rem;
+    }
+
+    .entry:not(:last-child) {
+        border-bottom: 1px solid #ddd;
     }
 
     .entry {
         flex-direction: column;
         align-items: center;
+        padding-bottom: 20px;
     }
 
     .entry-logo {
+        width: 120px;
+        height: 120px;
+        margin-bottom: 10px;
+    }
+
+    .entry-logo-small {
         width: 120px;
         height: 120px;
         margin-bottom: 10px;
@@ -269,36 +299,43 @@ nav a:hover {
 }
 
 @media (max-width: 480px) {
-    body {
+    .page-wrapper {
         max-width: 100%;
         padding: 8px;
     }
 
-    header {
+    .header {
         padding: 1rem;
     }
 
-    header h1 {
+    .header-title {
         font-size: 1.5rem;
     }
 
-    header p {
+    .header-subtitle {
         font-size: 0.8rem;
     }
 
-    section {
+    .content-section {
         padding: 12px;
     }
 
-    h2 {
+    .section-title {
         font-size: 1.1rem;
     }
 
-    .entry {
+    .entry:not(:last-child) {
         align-items: center;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 20px;
     }
 
     .entry-logo {
+        width: 100px;
+        height: 100px;
+    }
+
+    .entry-logo-small {
         width: 100px;
         height: 100px;
     }
