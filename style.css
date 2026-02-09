@@ -124,6 +124,14 @@ ul {
     border-radius: 8px;
 }
 
+.entry-logo-small {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    flex-shrink: 0;
+    border-radius: 8px;
+}
+
 .entry-content {
     flex: 1;
 }
