@@ -1,101 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Cohen Smith | Software Developer</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <header>
-            <h1>Cohen Smith</h1> 
-            <p>Plano, TX | 773-402-9458 | cohens@smu.edu</p> 
-            <nav>
-                <a href="https://www.linkedin.com/in/cohen-smith-02587225a">LinkedIn</a> | <a href="https://github.com/cssmith8">GitHub</a> 
-            </nav>
-        </header>
-        <section>
-            <h2>Education</h2>
-            <p><strong>Southern Methodist University</strong>, Dallas, TX</p>
-            <p>Bobby B. Lyle School of Engineering | B.S. in Computer Science</p>
-            <p>GPA: 3.870 | Grad Date: May 2025</p>
-            <p><em>Awards: SMU Second Century Scholar, SMU Discovery Scholar</em></p>
-        </section>
-        <section>
-            <h2>Skills Summary</h2>
-            <ul>
-                <li><strong>Languages:</strong> PHP, TypeScript, C++, C#, Java, Python, Rust, JavaScript</li> 
-                <li><strong>Tools:</strong> Power Automate, AWS Management Console, Unity, Photoshop, Microsoft Office Suite, Power BI</li>
-                <li><strong>Platforms:</strong> PhpStorm, VSCode, Visual Studio, CLion, IntelliJ</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Work Experience</h2>
-            <div class="entry">
-                <h3>Software Developer - Paycom</h3>
-                <p><em>May 2025 - February 2026</em></p>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cohen Smith | Software Developer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Cohen Smith</h1>
+        <p>Plano, TX  |  773-402-9458  |  cohens@smu.edu</p>
+        <nav>
+            <a href="https://www.linkedin.com/in/cohen-smith-02587225a">LinkedIn</a>  |  <a
+                href="https://github.com/cssmith8">GitHub</a>
+        </nav>
+    </header>
+
+    <div class="tab-container">
+        <div class="tab-buttons">
+            <button class="tab-button active" onclick="openTab(event, 'about')">About Me</button>
+            <button class="tab-button" onclick="openTab(event, 'resume')">Resume</button>
+        </div>
+
+        <div id="about" class="tab-content active">
+            <section>
+                <h2>About Me</h2>
+                <p>Hello! I'm Cohen Smith, a software developer based in Plano, Texas. I recently graduated
+                    from Southern Methodist University with a degree in Computer Science and have been working
+                    professionally as a software developer.</p>
+
+                <p>My journey in technology began with a curiosity about how things work and evolved into a career where
+                    I get to build solutions that impact millions of users. I thrive in collaborative environments and
+                    enjoy tackling complex challenges that require innovative thinking.</p>
+
+                <p>Feel free to contact me at cohens@smu.edu. I'm always looking for opportunities to grow
+                    both personally and professionally.</p>
+            </section>
+        </div>
+
+        <div id="resume" class="tab-content">
+            <section>
+                <h2>Education</h2>
+                <p><strong>Southern Methodist University</strong>, Dallas, TX</p>
+                <p>Bobby B. Lyle School of Engineering | B.S. in Computer Science</p>
+                <p>GPA: 3.870 | Grad Date: May 2025</p>
+                <p><em>Awards: SMU Second Century Scholar, SMU Discovery Scholar</em></p>
+            </section>
+            <section>
+                <h2>Skills Summary</h2>
                 <ul>
-                    <li>Architected key modules for the Paycom Employee Self-Service app with millions of active users.</li>
-                    <li>Balanced the delivery of high-priority features with critical bug resolution, maintaining platform performance.</li>
-                    <li> Collaborated across cross-functional teams to implement secure and scalable features.</li>
+                    <li><strong>Languages:</strong> PHP, TypeScript, C++, C#, Java, Python, Rust, JavaScript</li>
+                    <li><strong>Tools:</strong> Power Automate, AWS Management Console, Unity, Photoshop, Microsoft
+                        Office Suite, Power BI</li>
+                    <li><strong>Platforms:</strong> PhpStorm, VSCode, Visual Studio, CLion, IntelliJ</li>
                 </ul>
-            </div>
-            <div class="entry">
-                <h3>Software Developer - HuMin Game Lab</h3>
-                <p><em>July 2023 - May 2025</em></p>
-                <ul>
-                    <li>Developed educational video games for middle school students as part of a research study.</li>
-                    <li>Collaborated in an agile environment with regularly scheduled sprints and stand-up meetings.</li>
-                    <li>Created and presented tech demos to large groups, both individually and as a team.</li>
-                </ul>
-            </div>
-            <div class="entry">
-                <h3>Senior Mentor / Teaching Assistant - SMU</h3>
-                <p><em>August 2022 – July 2023</em></p>
-                <ul>
-                    <li>Tutored beginner computer programming students with C++ and Java.</li>
-                    <li>Lead weekly lab sections for 20+ students to collaborate on programming assignments.</li>
-                    <li>Managed grading of programming projects and quizzes for intro programming course.</li>
-                </ul>
-            </div>
-        </section>
-        <section>
-            <h2>Projects</h2>
-            <div class="entry">
-                <h3>Esposure Inc. - Educational Mobile Game Design</h3>
-                <ul>
-                    <li>Designed educational video game to teach basics of Esports team management.</li>
-                    <li>Developed a full-stack prototype with online multiplayer functionality.</li>
-                    <li>Held weekly meetings with sponsor to discuss project progress updates.</li>
-                </ul>
-            </div>
-            <div class="entry">
-                <h3>Zleepy - Technical Programmer + Artist: Video Game Development</h3>
-                <ul>
-                    <li>Worked in team environment to develop video game using Unity software.</li>
-                    <li>Created game artwork and trailers using Photoshop and Premiere Pro.</li>
-                    <li>Programmed core game mechanics according to design requirements.</li>
-                </ul>
-            </div>
-        </section>
-        <section>
-            <h2>Certificates</h2>
-            <div class="entry">
-                <h3>Microsoft Power Automate RPA Developer Associate</h3>
-                <p><em>July 2024</em></p>
-                <ul>
-                    <li>Optimized automated workflows using Power Automate Desktop, significantly reducing manual processing time.</li>
-                    <li>Developed scalable RPA solutions integrating UI flows and cloud flows following Microsoft security standards.</li>
-                </ul>
-            </div>
-            <div class="entry">
-                <h3>AWS Certified Cloud Practitioner</h3>
-                <p><em>August 2024</em></p>
-                <ul>
-                    <li>Demonstrated comprehensive knowledge of AWS cloud services, security protocols, and pricing structures.</li>
-                    <li>Implemented cloud solutions utilizing AWS best practices and Well-Architected Framework principles.</li>
-                </ul>
-            </div>
-        </section>
-    </body>
+            </section>
+            <section>
+                <h2>Work Experience</h2>
+                <div class="entry">
+                    <img src="paycom-logo.png" alt="Paycom" class="entry-logo">
+                    <div class="entry-content">
+                        <h3>Software Developer - Paycom</h3>
+                        <p><em>May 2025 - February 2026</em></p>
+                        <ul>
+                            <li>Architected key modules for the Paycom Employee Self-Service app with millions of active
+                                users.</li>
+                            <li>Balanced the delivery of high-priority features with critical bug resolution, maintaining
+                                platform performance.</li>
+                            <li> Collaborated across cross-functional teams to implement secure and scalable features.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="entry">
+                    <img src="humin-logo.png" alt="HuMIn Game Lab" class="entry-logo">
+                    <div class="entry-content">
+                        <h3>Software Developer - HuMIn Game Lab</h3>
+                        <p><em>July 2023 - May 2025</em></p>
+                        <ul>
+                            <li>Developed educational video games for middle school students as part of a research study.</li>
+                            <li>Collaborated in an agile environment with regularly scheduled sprints and stand-up meetings.</li>
+                            <li>Created and presented tech demos to large groups, both individually and as a team.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="entry">
+                    <img src="smu-logo.png" alt="Southern Methodist University" class="entry-logo">
+                    <div class="entry-content">
+                        <h3>Senior Mentor / Teaching Assistant - SMU</h3>
+                        <p><em>August 2022 - July 2023</em></p>
+                        <ul>
+                            <li>Tutored beginner computer programming students with C++ and Java coursework.</li>
+                            <li>Lead weekly lab sections for 20+ students to collaborate on programming assignments.</li>
+                            <li>Managed grading of programming projects and quizzes for intro programming course.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h2>Projects</h2>
+                <div class="entry">
+                    <div>
+                        <h3>Esposure Inc. - Educational Mobile Game Design</h3>
+                        <ul>
+                            <li>Designed educational video game to teach basics of Esports team management.</li>
+                            <li>Developed a full-stack prototype with online multiplayer functionality.</li>
+                            <li>Held weekly meetings with sponsor to discuss project progress updates.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="entry">
+                    <div>
+                        <h3>Zleepy - Technical Programmer + Artist: Video Game Development</h3>
+                        <ul>
+                            <li>Worked in team environment to develop video game using Unity software.</li>
+                            <li>Created game artwork and trailers using Photoshop and Premiere Pro.</li>
+                            <li>Programmed core game mechanics according to design requirements.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h2>Certificates</h2>
+                <div class="entry">
+                    <div>
+                        <h3>Microsoft Power Automate RPA Developer Associate</h3>
+                        <p><em>July 2024</em></p>
+                        <ul>
+                            <li>Optimized automated workflows using Power Automate Desktop, significantly reducing manual
+                                processing time.</li>
+                            <li>Developed scalable RPA solutions integrating UI flows and cloud flows following Microsoft
+                                security standards.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="entry">
+                    <div>
+                        <h3>AWS Certified Cloud Practitioner</h3>
+                        <p><em>August 2024</em></p>
+                        <ul>
+                            <li>Demonstrated comprehensive knowledge of AWS cloud services, security protocols, and pricing
+                                structures.</li>
+                            <li>Implemented cloud solutions utilizing AWS best practices and Well-Architected Framework
+                                principles.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script>
+        function openTab(evt, tabName) {
+            var i, tabContent, tabButtons;
+
+            tabContent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabContent.length; i++) {
+                tabContent[i].classList.remove("active");
+            }
+
+            tabButtons = document.getElementsByClassName("tab-button");
+            for (i = 0; i < tabButtons.length; i++) {
+                tabButtons[i].classList.remove("active");
+            }
+
+            document.getElementById(tabName).classList.add("active");
+            evt.currentTarget.classList.add("active");
+        }
+    </script>
+</body>
+
 </html>
