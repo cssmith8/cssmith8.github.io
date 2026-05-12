@@ -220,9 +220,9 @@ nav a:hover {
 .tab-buttons {
     display: flex;
     gap: 10px;
-    background: white;
-    padding: 10px 10px 0 10px;
-    border-radius: 8px 8px 0 0;
+    background: transparent;
+    padding: 6px 10px 0 10px;
+    margin-bottom: 12px;
 }
 
 .tab-button {
